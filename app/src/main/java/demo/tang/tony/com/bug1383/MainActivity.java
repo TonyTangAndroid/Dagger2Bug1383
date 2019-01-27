@@ -1,11 +1,11 @@
 package demo.tang.tony.com.bug1383;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import javax.inject.Inject;
 
+import androidx.appcompat.app.AppCompatActivity;
 import dagger.android.AndroidInjection;
 
 public class MainActivity extends AppCompatActivity implements MainPresenter.UI {
