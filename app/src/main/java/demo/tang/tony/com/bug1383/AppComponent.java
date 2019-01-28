@@ -3,11 +3,11 @@ package demo.tang.tony.com.bug1383;
 import android.app.Application;
 
 import dagger.BindsInstance;
-import dagger.android.AndroidInjectionModule;
+import dagger.android.support.AndroidSupportInjectionModule;
 
 @AppScope
 @dagger.Component(modules = {
-        AndroidInjectionModule.class,
+        AndroidSupportInjectionModule.class,
         ActivityInjector.class})
 public interface AppComponent {
 
