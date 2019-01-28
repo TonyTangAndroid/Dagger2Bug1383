@@ -20,7 +20,7 @@ android {
 }
 
 ext {
-    daggerVersion = '2.20'
+    daggerVersion = '2.21'
     //does NOT work. It will throw error "MainActivity is not a framework type" at compile time.
 }
 
