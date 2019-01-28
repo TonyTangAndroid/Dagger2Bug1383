@@ -21,7 +21,6 @@ android {
 
 ext {
     daggerVersion = '2.21'
-    //does NOT work. It will throw error "MainActivity is not a framework type" at compile time.
 }
 
 dependencies {
@@ -29,10 +28,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
 
-    compile "com.google.dagger:dagger:${daggerVersion}"
+    implementation "com.google.dagger:dagger:${daggerVersion}"
     annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
 
-    compile "com.google.dagger:dagger-android-support:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android-support:${daggerVersion}"
 //    compile "com.google.dagger:dagger-android-support:${daggerVersion}" // if you use the support libraries
     annotationProcessor "com.google.dagger:dagger-android-processor:${daggerVersion}"
 
